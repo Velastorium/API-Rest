@@ -1,0 +1,35 @@
+###
+POST http://localhost:7000/api/users HTTP/1.1
+
+# {
+#     "Name": "Alejandro Magno",
+#     "Age": 3000,
+#     "Email": "nikolatesla@gmail.com"
+# }
+
+# {
+#     "Name": "Nikola Tesla",
+#     "Age": 80,
+#     "Email": "nikolatesla@gmail.com"
+# }
+
+###
+GET http://localhost:7000/api/users HTTP/1.1
+
+
+###
+GET http://localhost:7000/api/users/655cf43d1f79a8fc9d2badaa HTTP/1.1
+
+
+###
+DELETE  http://localhost:7000/api/users/655e41723954a5e8520bdadc HTTP/1.1
+
+###
+PUT http://localhost:7000/api/users/655cf43d1f79a8fc9d2badaa HTTP/1.1
+Content-Type: application/json
+
+{
+    "Name": "Nikola Tesla",
+    "Age": 100,
+    "Email": "nikolatesla@gmail.com"
+}
